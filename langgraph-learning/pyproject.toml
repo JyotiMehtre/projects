@@ -1,0 +1,26 @@
+[project]
+name = "langgraph"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "aiohttp>=3.12.14",
+    "chromadb>=1.0.20",
+    "google>=3.0.0",
+    "langchain-community>=0.3.27",
+    "langchain-google-vertexai>=2.0.9",
+    "langchain-huggingface>=0.3.1",
+    "langchain-mcp-adapters>=0.1.9",
+    "langchain[google-vertexai,openai]>=0.3.26",
+    "mcp[cli]>=1.12.2",
+    "requests>=2.32.4",
+    "sentence-transformers>=5.1.0",
+    "vertexai>=1.71.1",
+]
+
+[tool.uv.workspace]
+members = [
+    "mail_toner",
+    "mailtoner",
+]
